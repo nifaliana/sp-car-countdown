@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+      <h1>Fotoana mbola ananantsika mandrapiverin'ny Car @ Juillet</h1>
       {countDown ? (
         <div className="countdown_wrapper">
           <TimerCard value={countDown?.days} label="Andro" />
