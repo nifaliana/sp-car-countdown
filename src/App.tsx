@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import TimerCard from './components/TimerCard';
 
 export interface ICountdown {
   days: number;
@@ -51,13 +50,9 @@ function App() {
     <div className="container">
       <h1>Fotoana mbola ananantsika mandrapiverin'ny Car @ Juillet</h1>
       {countDown ? (
-        <img style={{width: 200, height: 200}} src='https://scontent.ftmm1-1.fna.fbcdn.net/v/t39.30808-6/290241944_1272339156903295_465679546326165014_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFuh8ECRLx3AaGIZL3VJ6wfZwESSxJUeX1nARJLElR5fZfxVd9BmEcDvDhk7sJKDvHXdVzrJrvXSCCBbxNVASJj&_nc_ohc=maVlFhy9mykAX-x4PJU&_nc_zt=23&_nc_ht=scontent.ftmm1-1.fna&oh=00_AT_602D_GNX60LP9nmX_eLWayYOlDjGN29e3yxFP6E617g&oe=62C2B703'/>
-        // <div className="countdown_wrapper">
-        //   <TimerCard value={countDown?.days} label="Andro" />
-        //   <TimerCard value={countDown?.hours} label="Ora" />
-        //   <TimerCard value={countDown?.min} label="Minitra" />
-        //   <TimerCard value={Math.round(countDown?.sec)} label="Segondra" />
-        // </div>
+        <div className="countdown_wrapper">
+           <img style={{width: 200, height: 200}} src='https://scontent.ftmm1-1.fna.fbcdn.net/v/t39.30808-6/290241944_1272339156903295_465679546326165014_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFuh8ECRLx3AaGIZL3VJ6wfZwESSxJUeX1nARJLElR5fZfxVd9BmEcDvDhk7sJKDvHXdVzrJrvXSCCBbxNVASJj&_nc_ohc=maVlFhy9mykAX-x4PJU&_nc_zt=23&_nc_ht=scontent.ftmm1-1.fna&oh=00_AT_602D_GNX60LP9nmX_eLWayYOlDjGN29e3yxFP6E617g&oe=62C2B703'/>
+        </div>
       ) : (
         <span>Miandry kely...</span>
       )}
